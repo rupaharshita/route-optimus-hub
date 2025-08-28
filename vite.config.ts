@@ -6,8 +6,9 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "0.0.0.0", // listen on all network interfaces
-    port: parseInt(process.env.PORT) || 8080, // use Render's assigned PORT
+    host: "0.0.0.0",
+    port: parseInt(process.env.PORT) || 8080,
+    allowedHosts: ["nomadalle-software.onrender.com"], // ✅ add your Render host
   },
   plugins: [
     react(),
