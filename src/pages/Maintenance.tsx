@@ -22,58 +22,58 @@ const Maintenance = () => {
   const maintenanceData = [
     {
       id: "M-001",
-      vehicleId: "FL-001",
-      type: "Oil Change",
+      vehicleId: "MH-12-AB-1234",
+      type: "Engine Oil Change",
       status: "Scheduled",
       dueDate: "2024-03-15",
       priority: "Medium",
       estimatedHours: 2,
-      cost: "$150",
-      description: "Regular oil change and filter replacement"
+      cost: "₹3,500",
+      description: "Regular engine oil change and filter replacement"
     },
     {
       id: "M-002",
-      vehicleId: "FL-003",
-      type: "Brake Repair",
+      vehicleId: "KA-03-EF-9012",
+      type: "Brake Pad Replacement",
       status: "In Progress",
       dueDate: "2024-02-20",
       priority: "High",
       estimatedHours: 4,
-      cost: "$450",
+      cost: "₹12,500",
       description: "Front brake pad replacement and rotor resurfacing"
     },
     {
       id: "M-003",
-      vehicleId: "FL-007",
-      type: "Tire Rotation",
+      vehicleId: "TN-07-GH-3456",
+      type: "Tyre Rotation",
       status: "Overdue",
       dueDate: "2024-02-10",
       priority: "High",
       estimatedHours: 1,
-      cost: "$80",
-      description: "Tire rotation and alignment check"
+      cost: "₹2,000",
+      description: "Tyre rotation and wheel alignment check"
     },
     {
       id: "M-004",
-      vehicleId: "FL-012",
-      type: "Engine Tune-up",
+      vehicleId: "DL-01-CD-5678",
+      type: "PUC Certificate Renewal",
       status: "Scheduled",
       dueDate: "2024-03-22",
-      priority: "Medium",
-      estimatedHours: 6,
-      cost: "$650",
-      description: "Complete engine tune-up and diagnostic"
+      priority: "High",
+      estimatedHours: 2,
+      cost: "₹500",
+      description: "Pollution Under Control certificate renewal"
     },
     {
       id: "M-005",
-      vehicleId: "FL-018",
-      type: "Transmission Service",
+      vehicleId: "GJ-05-IJ-7890",
+      type: "Gear Box Service",
       status: "Completed",
       dueDate: "2024-02-15",
       priority: "Low",
       estimatedHours: 3,
-      cost: "$320",
-      description: "Transmission fluid change and filter replacement"
+      cost: "₹8,500",
+      description: "Gear box oil change and filter replacement"
     }
   ];
 

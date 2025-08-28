@@ -18,27 +18,27 @@ import {
 
 const Fuel = () => {
   const fuelData = [
-    { month: "Jan", consumption: 4200, cost: 12600, efficiency: 6.2 },
-    { month: "Feb", consumption: 3800, cost: 11400, efficiency: 6.5 },
-    { month: "Mar", consumption: 4100, cost: 12300, efficiency: 6.3 },
-    { month: "Apr", consumption: 3900, cost: 11700, efficiency: 6.4 },
-    { month: "May", consumption: 3700, cost: 11100, efficiency: 6.7 },
-    { month: "Jun", consumption: 3600, cost: 10800, efficiency: 6.8 }
+    { month: "Jan", consumption: 4200, cost: 420000, efficiency: 15.2 },
+    { month: "Feb", consumption: 3800, cost: 380000, efficiency: 16.5 },
+    { month: "Mar", consumption: 4100, cost: 410000, efficiency: 15.8 },
+    { month: "Apr", consumption: 3900, cost: 390000, efficiency: 16.1 },
+    { month: "May", consumption: 3700, cost: 370000, efficiency: 16.7 },
+    { month: "Jun", consumption: 3600, cost: 360000, efficiency: 17.2 }
   ];
 
   const recommendations = [
     {
       id: 1,
       type: "Route Optimization",
-      potential: "$450/month",
-      description: "Optimize routes for vehicles FL-003, FL-007, and FL-012",
+      potential: "₹35,000/month",
+      description: "Optimize routes for vehicles MH-12-AB-1234, TN-07-GH-3456, and KA-03-EF-9012",
       priority: "High",
       impact: "12% fuel savings"
     },
     {
       id: 2,
       type: "Driver Training",
-      potential: "$280/month",
+      potential: "₹22,000/month",
       description: "Eco-driving training for 5 drivers with aggressive acceleration patterns",
       priority: "Medium",
       impact: "8% efficiency gain"
@@ -46,28 +46,28 @@ const Fuel = () => {
     {
       id: 3,
       type: "Maintenance",
-      potential: "$180/month",
-      description: "Tire pressure optimization and air filter replacements",
+      potential: "₹14,000/month",
+      description: "Tyre pressure optimization and air filter replacements",
       priority: "Medium",
       impact: "5% consumption reduction"
     },
     {
       id: 4,
-      type: "Fuel Card Optimization",
-      potential: "$120/month",
-      description: "Switch to preferred fuel stations with better rates",
+      type: "Fuel Station Optimization",
+      potential: "₹9,500/month",
+      description: "Switch to IOCL/BPCL stations with fleet discounts",
       priority: "Low",
       impact: "3% cost reduction"
     }
   ];
 
   const vehicleFuelStatus = [
-    { id: "FL-001", level: 78, mpg: 6.8, status: "Good", lastFill: "2 hours ago" },
-    { id: "FL-002", level: 92, mpg: 7.2, status: "Excellent", lastFill: "4 hours ago" },
-    { id: "FL-003", level: 34, mpg: 5.9, status: "Low", lastFill: "18 hours ago" },
-    { id: "FL-005", level: 45, mpg: 6.1, status: "Fair", lastFill: "12 hours ago" },
-    { id: "FL-007", level: 67, mpg: 6.5, status: "Good", lastFill: "8 hours ago" },
-    { id: "FL-012", level: 88, mpg: 7.1, status: "Excellent", lastFill: "1 hour ago" }
+    { id: "MH-12-AB-1234", level: 78, kmpl: 16.8, status: "Good", lastFill: "2 hours ago" },
+    { id: "DL-01-CD-5678", level: 92, kmpl: 18.2, status: "Excellent", lastFill: "4 hours ago" },
+    { id: "KA-03-EF-9012", level: 34, kmpl: 14.9, status: "Low", lastFill: "18 hours ago" },
+    { id: "GJ-05-IJ-7890", level: 45, kmpl: 15.1, status: "Fair", lastFill: "12 hours ago" },
+    { id: "TN-07-GH-3456", level: 67, kmpl: 16.5, status: "Good", lastFill: "8 hours ago" },
+    { id: "RJ-14-MN-2468", level: 88, kmpl: 17.1, status: "Excellent", lastFill: "1 hour ago" }
   ];
 
   const getFuelLevelColor = (level: number) => {
@@ -137,10 +137,10 @@ const Fuel = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-muted-foreground">Monthly Cost</p>
-                  <p className="text-2xl font-bold text-card-foreground">$10,800</p>
+                  <p className="text-2xl font-bold text-card-foreground">₹3,60,000</p>
                   <p className="text-xs text-success flex items-center">
                     <TrendingDown className="w-3 h-3 mr-1" />
-                    -$300 saved
+                    -₹10,000 saved
                   </p>
                 </div>
                 <DollarSign className="w-8 h-8 text-success" />
@@ -152,7 +152,7 @@ const Fuel = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-muted-foreground">Avg Efficiency</p>
-                  <p className="text-2xl font-bold text-card-foreground">6.8 MPG</p>
+                  <p className="text-2xl font-bold text-card-foreground">16.8 KMPL</p>
                   <p className="text-xs text-success flex items-center">
                     <TrendingUp className="w-3 h-3 mr-1" />
                     +0.3 improvement
@@ -167,7 +167,7 @@ const Fuel = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-muted-foreground">Potential Savings</p>
-                  <p className="text-2xl font-bold text-warning">$1,030</p>
+                  <p className="text-2xl font-bold text-warning">₹80,500</p>
                   <p className="text-xs text-warning">Per month available</p>
                 </div>
                 <Target className="w-8 h-8 text-warning" />
@@ -192,9 +192,9 @@ const Fuel = () => {
                     <div className="flex items-center justify-between text-sm">
                       <span className="font-medium text-card-foreground">{month.month} 2024</span>
                       <div className="flex items-center gap-4">
-                        <span className="text-muted-foreground">{month.consumption} gal</span>
-                        <span className="text-muted-foreground">${month.cost.toLocaleString()}</span>
-                        <span className="text-primary">{month.efficiency} MPG</span>
+                        <span className="text-muted-foreground">{month.consumption} litres</span>
+                        <span className="text-muted-foreground">₹{month.cost.toLocaleString()}</span>
+                        <span className="text-primary">{month.efficiency} KMPL</span>
                       </div>
                     </div>
                     <Progress value={(month.consumption / 4200) * 100} className="w-full" />
@@ -245,7 +245,7 @@ const Fuel = () => {
                   </div>
                   
                   <div className="flex items-center justify-between text-xs text-muted-foreground">
-                    <span>MPG: {vehicle.mpg}</span>
+                    <span>KMPL: {vehicle.kmpl}</span>
                     <span>Last fill: {vehicle.lastFill}</span>
                   </div>
                   
@@ -298,7 +298,7 @@ const Fuel = () => {
             <div className="mt-6 p-4 bg-gradient-warning/10 border border-warning/20 rounded-lg">
               <div className="flex items-center gap-2 mb-2">
                 <Target className="w-5 h-5 text-warning" />
-                <span className="font-medium text-warning">Total Potential Monthly Savings: $1,030</span>
+                <span className="font-medium text-warning">Total Potential Monthly Savings: ₹80,500</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Implementing all recommendations could reduce fuel costs by 28% and improve overall fleet efficiency.
@@ -321,7 +321,7 @@ const Fuel = () => {
                 <div className="flex items-center gap-3">
                   <FuelIcon className="w-5 h-5 text-destructive" />
                   <div>
-                    <p className="font-medium text-destructive">FL-003 - Critical Fuel Level</p>
+                    <p className="font-medium text-destructive">KA-03-EF-9012 - Critical Fuel Level</p>
                     <p className="text-sm text-muted-foreground">34% remaining - immediate refuel required</p>
                   </div>
                 </div>
@@ -346,7 +346,7 @@ const Fuel = () => {
                   <TrendingUp className="w-5 h-5 text-info" />
                   <div>
                     <p className="font-medium text-info">Efficiency Improvement Detected</p>
-                    <p className="text-sm text-muted-foreground">Fleet average MPG improved by 4% this week</p>
+                    <p className="text-sm text-muted-foreground">Fleet average KMPL improved by 4% this week</p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">

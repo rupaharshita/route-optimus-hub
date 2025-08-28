@@ -36,7 +36,7 @@ export function DashboardOverview() {
     },
     {
       title: "Fuel Savings",
-      value: "$12.4K",
+      value: "₹8.2L",
       change: "+8.2% this month",
       changeType: "positive" as const,
       icon: Fuel,
@@ -70,7 +70,7 @@ export function DashboardOverview() {
     { 
       id: 1, 
       type: "delivery", 
-      message: "Vehicle FL-001 completed delivery to Chicago", 
+      message: "Vehicle MH-12-AB-1234 completed delivery to Mumbai", 
       time: "2 min ago",
       icon: CheckCircle2,
       color: "text-success"
@@ -78,7 +78,7 @@ export function DashboardOverview() {
     { 
       id: 2, 
       type: "maintenance", 
-      message: "Vehicle FL-045 scheduled for maintenance", 
+      message: "Vehicle DL-01-CD-5678 scheduled for PUC renewal", 
       time: "15 min ago",
       icon: AlertTriangle,
       color: "text-warning"
@@ -86,7 +86,7 @@ export function DashboardOverview() {
     { 
       id: 3, 
       type: "route", 
-      message: "Route optimization completed for Zone A", 
+      message: "Route optimization completed for Delhi-Bangalore corridor", 
       time: "1 hour ago",
       icon: TrendingUp,
       color: "text-primary"
@@ -94,7 +94,7 @@ export function DashboardOverview() {
     { 
       id: 4, 
       type: "driver", 
-      message: "Driver J. Smith started shift", 
+      message: "Driver Ravi Kumar started shift", 
       time: "2 hours ago",
       icon: Users,
       color: "text-info"

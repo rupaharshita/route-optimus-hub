@@ -18,46 +18,46 @@ import {
 const Tracking = () => {
   const activeVehicles = [
     {
-      id: "FL-001",
-      driver: "John Smith",
+      id: "MH-12-AB-1234",
+      driver: "Ravi Kumar",
       status: "In Transit",
-      location: "I-90, Mile 127",
-      destination: "New York, NY",
+      location: "NH-48, Km 127",
+      destination: "Delhi",
       eta: "2:45 PM",
-      speed: "65 mph",
+      speed: "65 km/h",
       fuel: "78%",
       progress: 65
     },
     {
-      id: "FL-002",
-      driver: "Sarah Johnson",
+      id: "DL-01-CD-5678",
+      driver: "Priya Sharma",
       status: "Loading",
-      location: "Warehouse A",
-      destination: "Boston, MA",
+      location: "Warehouse Gurgaon",
+      destination: "Pune",
       eta: "4:20 PM",
-      speed: "0 mph",
+      speed: "0 km/h",
       fuel: "92%",
       progress: 5
     },
     {
-      id: "FL-005",
-      driver: "Lisa Brown",
+      id: "GJ-05-IJ-7890",
+      driver: "Neha Patel",
       status: "In Transit",
-      location: "I-95, Mile 203",
-      destination: "Miami, FL",
+      location: "NH-65, Km 203",
+      destination: "Bangalore",
       eta: "11:30 PM",
-      speed: "58 mph",
+      speed: "58 km/h",
       fuel: "45%",
       progress: 42
     },
     {
-      id: "FL-007",
-      driver: "Mike Wilson",
+      id: "TN-07-GH-3456",
+      driver: "Ankit Singh",
       status: "Delivering",
-      location: "Downtown Chicago",
-      destination: "Chicago, IL",
+      location: "Chennai City",
+      destination: "Chennai Port",
       eta: "In Progress",
-      speed: "15 mph",
+      speed: "15 km/h",
       fuel: "67%",
       progress: 95
     }
@@ -140,7 +140,7 @@ const Tracking = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-muted-foreground">Avg Speed</p>
-                  <p className="text-2xl font-bold text-success">62 mph</p>
+                  <p className="text-2xl font-bold text-success">62 km/h</p>
                 </div>
                 <Zap className="w-8 h-8 text-success" />
               </div>
@@ -178,22 +178,22 @@ const Tracking = () => {
                     {/* Vehicle Markers */}
                     <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-primary rounded-full animate-pulse shadow-glow">
                       <div className="absolute -top-8 -left-6 bg-card border border-border rounded px-2 py-1 text-xs whitespace-nowrap">
-                        FL-001 - 65mph
+                        MH-12-AB-1234 - 65km/h
                       </div>
                     </div>
                     <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-success rounded-full animate-pulse">
                       <div className="absolute -top-8 -left-6 bg-card border border-border rounded px-2 py-1 text-xs whitespace-nowrap">
-                        FL-007 - Delivering
+                        TN-07-GH-3456 - Delivering
                       </div>
                     </div>
                     <div className="absolute top-3/4 right-1/3 w-3 h-3 bg-warning rounded-full animate-pulse">
                       <div className="absolute -top-8 -left-6 bg-card border border-border rounded px-2 py-1 text-xs whitespace-nowrap">
-                        FL-002 - Loading
+                        DL-01-CD-5678 - Loading
                       </div>
                     </div>
                     <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary rounded-full animate-pulse">
                       <div className="absolute -top-8 -left-6 bg-card border border-border rounded px-2 py-1 text-xs whitespace-nowrap">
-                        FL-005 - 58mph
+                        GJ-05-IJ-7890 - 58km/h
                       </div>
                     </div>
 
@@ -340,14 +340,14 @@ const Tracking = () => {
                 <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-lg">
                   <div className="flex items-center gap-2 mb-1">
                     <AlertTriangle className="w-4 h-4 text-destructive" />
-                    <span className="font-medium text-destructive">FL-005 - Low Fuel</span>
+                    <span className="font-medium text-destructive">GJ-05-IJ-7890 - Low Fuel</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Fuel level at 45% - nearest station 12 miles</p>
+                  <p className="text-sm text-muted-foreground">Fuel level at 45% - nearest station 12 km</p>
                 </div>
                 <div className="p-3 bg-warning/10 border border-warning/20 rounded-lg">
                   <div className="flex items-center gap-2 mb-1">
                     <Clock className="w-4 h-4 text-warning" />
-                    <span className="font-medium text-warning">FL-001 - Delayed</span>
+                    <span className="font-medium text-warning">MH-12-AB-1234 - Delayed</span>
                   </div>
                   <p className="text-sm text-muted-foreground">15 minutes behind schedule due to traffic</p>
                 </div>
@@ -356,7 +356,7 @@ const Tracking = () => {
                     <Navigation className="w-4 h-4 text-info" />
                     <span className="font-medium text-info">Route Update</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Alternative route suggested for FL-007</p>
+                  <p className="text-sm text-muted-foreground">Alternative route suggested for TN-07-GH-3456</p>
                 </div>
               </CardContent>
             </Card>

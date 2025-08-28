@@ -25,43 +25,43 @@ const Drivers = () => {
   const driverData = [
     {
       id: "D-001",
-      name: "John Smith",
-      email: "john.smith@nomadalle.com",
-      phone: "(555) 123-4567",
+      name: "Ravi Kumar",
+      email: "ravi.kumar@nomadalle.com",
+      phone: "+91 98765 43210",
       status: "Active",
-      currentVehicle: "FL-001",
-      currentRoute: "Chicago → NYC",
+      currentVehicle: "MH-12-AB-1234",
+      currentRoute: "Mumbai → Delhi",
       hoursWorked: 6.5,
       maxHours: 11,
       rating: 4.8,
       completedDeliveries: 247,
       onTimeDeliveries: 96,
       licenseExpiry: "2025-08-15",
-      certifications: ["CDL-A", "HAZMAT", "Defensive Driving"],
+      certifications: ["Heavy Vehicle License", "Defensive Driving", "First Aid"],
       lastActivity: "2 hours ago"
     },
     {
       id: "D-002",
-      name: "Sarah Johnson",
-      email: "sarah.johnson@nomadalle.com",
-      phone: "(555) 234-5678",
+      name: "Priya Sharma",
+      email: "priya.sharma@nomadalle.com",
+      phone: "+91 87654 32109",
       status: "On Break",
-      currentVehicle: "FL-002",
-      currentRoute: "Dallas → Atlanta",
+      currentVehicle: "DL-01-CD-5678",
+      currentRoute: "Delhi → Pune",
       hoursWorked: 4.2,
       maxHours: 10,
       rating: 4.9,
       completedDeliveries: 189,
       onTimeDeliveries: 98,
       licenseExpiry: "2024-12-22",
-      certifications: ["CDL-B", "Defensive Driving"],
+      certifications: ["Light Vehicle License", "Defensive Driving"],
       lastActivity: "15 minutes ago"
     },
     {
       id: "D-003",
-      name: "Mike Wilson",
-      email: "mike.wilson@nomadalle.com",
-      phone: "(555) 345-6789",
+      name: "Ankit Singh",
+      email: "ankit.singh@nomadalle.com",
+      phone: "+91 76543 21098",
       status: "Off Duty",
       currentVehicle: "Unassigned",
       currentRoute: "-",
@@ -71,24 +71,24 @@ const Drivers = () => {
       completedDeliveries: 312,
       onTimeDeliveries: 94,
       licenseExpiry: "2025-03-10",
-      certifications: ["CDL-A", "DOT Physical"],
+      certifications: ["Heavy Vehicle License", "Medical Certificate"],
       lastActivity: "8 hours ago"
     },
     {
       id: "D-004",
-      name: "Lisa Brown",
-      email: "lisa.brown@nomadalle.com",
-      phone: "(555) 456-7890",
+      name: "Neha Patel",
+      email: "neha.patel@nomadalle.com",
+      phone: "+91 65432 10987",
       status: "Active",
-      currentVehicle: "FL-005",
-      currentRoute: "Boston → Miami",
+      currentVehicle: "GJ-05-IJ-7890",
+      currentRoute: "Ahmedabad → Bangalore",
       hoursWorked: 9.8,
       maxHours: 11,
       rating: 4.7,
       completedDeliveries: 156,
       onTimeDeliveries: 97,
       licenseExpiry: "2024-11-05",
-      certifications: ["CDL-A", "HAZMAT"],
+      certifications: ["Heavy Vehicle License", "Hazardous Material"],
       lastActivity: "1 hour ago"
     }
   ];
@@ -334,7 +334,7 @@ const Drivers = () => {
                   <Calendar className="w-5 h-5 text-warning" />
                   <div>
                     <p className="font-medium text-card-foreground">3 licenses expiring within 30 days</p>
-                    <p className="text-sm text-muted-foreground">Lisa Brown (Nov 5), Robert Davis (Nov 12), Maria Garcia (Nov 18)</p>
+                    <p className="text-sm text-muted-foreground">Neha Patel (Nov 5), Rajesh Gupta (Nov 12), Sunita Verma (Nov 18)</p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">
@@ -346,7 +346,7 @@ const Drivers = () => {
                   <Clock className="w-5 h-5 text-info" />
                   <div>
                     <p className="font-medium text-card-foreground">2 drivers approaching HOS limits</p>
-                    <p className="text-sm text-muted-foreground">Monitor driving hours for John Smith and Lisa Brown</p>
+                    <p className="text-sm text-muted-foreground">Monitor driving hours for Ravi Kumar and Neha Patel</p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">

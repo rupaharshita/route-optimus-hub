@@ -20,58 +20,58 @@ import {
 const Vehicles = () => {
   const vehicleData = [
     {
-      id: "FL-001",
-      type: "Semi-Truck",
+      id: "MH-12-AB-1234",
+      type: "Tata Prima",
       status: "Available",
-      location: "Chicago, IL",
-      driver: "John Smith",
+      location: "Mumbai, Maharashtra",
+      driver: "Ravi Kumar",
       lastMaintenance: "2024-01-15",
       nextService: "2024-03-15",
-      mileage: "145,230",
+      mileage: "1,45,230",
       condition: "Excellent"
     },
     {
-      id: "FL-002",
-      type: "Delivery Van",
+      id: "DL-01-CD-5678",
+      type: "Mahindra Bolero",
       status: "In Transit",
-      location: "En Route to NYC",
-      driver: "Sarah Johnson",
+      location: "En Route to Pune",
+      driver: "Priya Sharma",
       lastMaintenance: "2024-01-22",
       nextService: "2024-04-22",
       mileage: "89,450",
       condition: "Good"
     },
     {
-      id: "FL-003",
-      type: "Semi-Truck",
+      id: "KA-03-EF-9012",
+      type: "Ashok Leyland",
       status: "Under Maintenance",
-      location: "Service Center A",
+      location: "Service Center Bangalore",
       driver: "Unassigned",
       lastMaintenance: "2024-02-01",
       nextService: "In Progress",
-      mileage: "198,750",
+      mileage: "1,98,750",
       condition: "Needs Repair"
     },
     {
-      id: "FL-004",
-      type: "Box Truck",
+      id: "TN-07-GH-3456",
+      type: "Eicher Pro 2049",
       status: "Available",
-      location: "Dallas, TX",
-      driver: "Mike Wilson",
+      location: "Chennai, Tamil Nadu",
+      driver: "Ankit Singh",
       lastMaintenance: "2024-01-10",
       nextService: "2024-02-28",
       mileage: "67,890",
       condition: "Good"
     },
     {
-      id: "FL-005",
-      type: "Delivery Van",
+      id: "GJ-05-IJ-7890",
+      type: "Force Traveller",
       status: "In Transit",
-      location: "Highway I-95",
-      driver: "Lisa Brown",
+      location: "NH-48, Gujarat",
+      driver: "Neha Patel",
       lastMaintenance: "2024-01-28",
       nextService: "2024-04-28",
-      mileage: "112,340",
+      mileage: "1,12,340",
       condition: "Excellent"
     }
   ];
@@ -193,9 +193,11 @@ const Vehicles = () => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Types</SelectItem>
-                  <SelectItem value="semi">Semi-Truck</SelectItem>
-                  <SelectItem value="van">Delivery Van</SelectItem>
-                  <SelectItem value="box">Box Truck</SelectItem>
+                  <SelectItem value="tata">Tata Prima</SelectItem>
+                  <SelectItem value="mahindra">Mahindra Bolero</SelectItem>
+                  <SelectItem value="ashok">Ashok Leyland</SelectItem>
+                  <SelectItem value="eicher">Eicher Pro</SelectItem>
+                  <SelectItem value="force">Force Traveller</SelectItem>
                 </SelectContent>
               </Select>
               <Select>
@@ -215,9 +217,11 @@ const Vehicles = () => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Locations</SelectItem>
-                  <SelectItem value="chicago">Chicago, IL</SelectItem>
-                  <SelectItem value="dallas">Dallas, TX</SelectItem>
-                  <SelectItem value="nyc">New York, NY</SelectItem>
+                  <SelectItem value="mumbai">Mumbai, Maharashtra</SelectItem>
+                  <SelectItem value="delhi">Delhi NCR</SelectItem>
+                  <SelectItem value="bangalore">Bangalore, Karnataka</SelectItem>
+                  <SelectItem value="chennai">Chennai, Tamil Nadu</SelectItem>
+                  <SelectItem value="pune">Pune, Maharashtra</SelectItem>
                 </SelectContent>
               </Select>
               <Select>
@@ -283,7 +287,7 @@ const Vehicles = () => {
                         <span className="text-card-foreground">{vehicle.driver}</span>
                       </td>
                       <td className="p-4">
-                        <span className="text-card-foreground">{vehicle.mileage} mi</span>
+                        <span className="text-card-foreground">{vehicle.mileage} km</span>
                       </td>
                       <td className="p-4">
                         <div className="flex items-center gap-2">

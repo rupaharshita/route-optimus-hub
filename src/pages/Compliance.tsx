@@ -30,69 +30,76 @@ const Compliance = () => {
   const violations = [
     {
       id: "V-001",
-      type: "HOS Violation",
+      type: "Driving Hours Violation",
       severity: "High",
-      driver: "John Smith",
-      vehicle: "FL-007",
+      driver: "Ravi Kumar",
+      vehicle: "TN-07-GH-3456",
       date: "2024-02-18",
       status: "Under Review",
-      description: "Exceeded maximum driving hours limit"
+      description: "Exceeded maximum driving hours as per Motor Vehicle Act"
     },
     {
       id: "V-002",
-      type: "Speeding",
+      type: "Speed Limit Violation",
       severity: "Medium",
-      driver: "Mike Wilson",
-      vehicle: "FL-012",
+      driver: "Ankit Singh",
+      vehicle: "KA-03-EF-9012",
       date: "2024-02-17",
       status: "Resolved",
-      description: "Speed exceeded by 8 mph in construction zone"
+      description: "Speed exceeded by 15 km/h in highway construction zone"
     },
     {
       id: "V-003",
       type: "Pre-Trip Inspection",
       severity: "Low",
-      driver: "Sarah Johnson",
-      vehicle: "FL-003",
+      driver: "Priya Sharma",
+      vehicle: "DL-01-CD-5678",
       date: "2024-02-16",
       status: "Pending",
-      description: "Incomplete pre-trip inspection checklist"
+      description: "Incomplete vehicle fitness checklist"
     }
   ];
 
   const expiringDocuments = [
     {
-      type: "DOT Medical Certificate",
-      driver: "Lisa Brown",
+      type: "Medical Fitness Certificate",
+      driver: "Neha Patel",
       expiryDate: "2024-03-15",
       daysLeft: 23,
       status: "Critical"
     },
     {
-      type: "CDL License",
-      driver: "Robert Davis",
+      type: "Heavy Vehicle Driving License",
+      driver: "Rajesh Gupta",
       expiryDate: "2024-04-22",
       daysLeft: 61,
       status: "Warning"
     },
     {
-      type: "HAZMAT Certification",
-      driver: "Maria Garcia",
+      type: "PUC Certificate",
+      vehicle: "MH-12-AB-1234",
       expiryDate: "2024-05-10",
       daysLeft: 79,
       status: "Normal"
     },
     {
-      type: "Vehicle Registration",
-      vehicle: "FL-015",
+      type: "Vehicle Registration (RC)",
+      vehicle: "KA-03-EF-9012",
       expiryDate: "2024-03-30",
       daysLeft: 38,
       status: "Warning"
+    },
+    {
+      type: "Vehicle Insurance",
+      vehicle: "DL-01-CD-5678",
+      expiryDate: "2024-03-20",
+      daysLeft: 28,
+      status: "Critical"
     }
   ];
 
   const safetyMetrics = [
-    { metric: "Accident Rate", value: "0.2 per 100K miles", trend: "down", change: "-15%" },
+    { metric: "Accident Rate", value: "0.2 per 100K km", trend: "down", change: "-15%" },
     { metric: "Safety Score", value: "96.2/100", trend: "up", change: "+2.1%" },
     { metric: "Incidents Reported", value: "3 this month", trend: "down", change: "-40%" },
     { metric: "Training Completed", value: "94% compliance", trend: "up", change: "+5%" }
@@ -364,7 +371,7 @@ const Compliance = () => {
                   <AlertTriangle className="w-5 h-5 text-destructive" />
                   <div>
                     <p className="font-medium text-destructive">Critical: Medical Certificate Expiry</p>
-                    <p className="text-sm text-muted-foreground">Lisa Brown's DOT medical certificate expires in 23 days</p>
+                    <p className="text-sm text-muted-foreground">Neha Patel's medical fitness certificate expires in 23 days</p>
                   </div>
                 </div>
                 <Button variant="destructive" size="sm">
@@ -375,8 +382,8 @@ const Compliance = () => {
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-warning" />
                   <div>
-                    <p className="font-medium text-warning">HOS Violation Review</p>
-                    <p className="text-sm text-muted-foreground">John Smith's hours of service violation requires management review</p>
+                    <p className="font-medium text-warning">Driving Hours Violation Review</p>
+                    <p className="text-sm text-muted-foreground">Ravi Kumar's driving hours violation requires management review</p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">
