@@ -8,66 +8,66 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Mission Control Fleet Dashboard Colors */
-    --background: 216 20% 6%;
-    --foreground: 210 40% 98%;
+    /* Light Fleet Dashboard Colors */
+    --background: 210 40% 98%;
+    --foreground: 216 20% 12%;
 
-    --card: 216 20% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 20% 12%;
 
-    --popover: 216 20% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 20% 12%;
 
     /* Professional Blue Primary */
     --primary: 214 85% 58%;
-    --primary-foreground: 216 20% 6%;
+    --primary-foreground: 0 0% 100%;
 
     /* Fleet Green Secondary */
     --secondary: 142 76% 36%;
-    --secondary-foreground: 216 20% 6%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 20% 15%;
-    --muted-foreground: 217 10% 64%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
     --accent: 214 85% 58%;
-    --accent-foreground: 216 20% 6%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 15%;
-    --input: 215 20% 15%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
     --ring: 214 85% 58%;
 
     /* Alert Colors */
     --warning: 43 96% 56%;
-    --warning-foreground: 216 20% 6%;
+    --warning-foreground: 0 0% 100%;
     --success: 142 76% 36%;
-    --success-foreground: 216 20% 6%;
+    --success-foreground: 0 0% 100%;
     --info: 199 89% 48%;
-    --info-foreground: 216 20% 6%;
+    --info-foreground: 0 0% 100%;
 
     /* Control Tower Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(214, 85%, 58%), hsl(199, 89%, 48%));
     --gradient-secondary: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(158, 64%, 52%));
     --gradient-warning: linear-gradient(135deg, hsl(43, 96%, 56%), hsl(35, 91%, 62%));
-    --gradient-control: linear-gradient(180deg, hsl(216, 20%, 8%), hsl(216, 20%, 6%));
+    --gradient-control: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(210, 40%, 98%));
 
-    /* Mission Control Shadows */
-    --shadow-control: 0 4px 12px hsla(214, 85%, 58%, 0.15);
-    --shadow-elevation: 0 8px 25px hsla(0, 0%, 0%, 0.3);
-    --shadow-glow: 0 0 20px hsla(214, 85%, 58%, 0.2);
+    /* Light Shadows */
+    --shadow-control: 0 4px 12px hsla(214, 85%, 58%, 0.1);
+    --shadow-elevation: 0 8px 25px hsla(0, 0%, 0%, 0.08);
+    --shadow-glow: 0 0 20px hsla(214, 85%, 58%, 0.15);
 
     --radius: 0.75rem;
 
-    /* Sidebar Colors for Mission Control */
-    --sidebar-background: 215 20% 12%;
-    --sidebar-foreground: 210 40% 98%;
+    /* Sidebar Colors for Light Theme */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 216 20% 12%;
     --sidebar-primary: 214 85% 58%;
-    --sidebar-primary-foreground: 216 20% 6%;
-    --sidebar-accent: 215 20% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 215 20% 15%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 216 20% 12%;
+    --sidebar-border: 214 32% 91%;
     --sidebar-ring: 214 85% 58%;
   }
 }

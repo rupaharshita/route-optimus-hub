@@ -15,6 +15,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 import fleetHeroImage from "@/assets/fleet-control-hero.jpg"
+import indiaMapImage from "@/assets/india-map.jpg"
 
 export function DashboardOverview() {
   const kpiData = [
@@ -167,22 +168,31 @@ export function DashboardOverview() {
           </CardContent>
         </Card>
 
-        {/* Live Fleet Map Placeholder */}
+        {/* Live Fleet Map */}
         <Card className="bg-card border-border shadow-control">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />
-              Live Fleet Map
+              Live Fleet Map - India
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/20" />
-              <div className="text-center z-10">
-                <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
-                <p className="text-sm text-muted-foreground">Interactive map coming soon</p>
-                <p className="text-xs text-muted-foreground mt-1">121 vehicles tracked</p>
+            <div className="aspect-video bg-muted rounded-lg relative overflow-hidden">
+              <img 
+                src={indiaMapImage} 
+                alt="India Fleet Map" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+              <div className="absolute bottom-3 left-3 bg-background/90 backdrop-blur-sm rounded-lg px-3 py-2">
+                <p className="text-sm font-medium text-foreground">121 vehicles tracked</p>
+                <p className="text-xs text-muted-foreground">Across 15 states</p>
               </div>
+              {/* Sample vehicle dots */}
+              <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-success rounded-full animate-pulse" title="Delhi - Available" />
+              <div className="absolute top-2/3 left-1/3 w-3 h-3 bg-primary rounded-full animate-pulse" title="Mumbai - In Transit" />
+              <div className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-warning rounded-full animate-pulse" title="Bangalore - Maintenance" />
+              <div className="absolute top-1/2 right-1/4 w-3 h-3 bg-success rounded-full animate-pulse" title="Chennai - Available" />
             </div>
           </CardContent>
         </Card>
